@@ -3,16 +3,18 @@ import {
   getCurrentDriverFinishedStatus,
   getCurrentDriverStandings,
 } from "./routes/getCurrentStandings";
+import cors from "cors";
 
 const app = express();
 const PORT = 8000;
 
 export const apiBaseUrl = "http://ergast.com/api/f1";
-
+app.use(cors());
 app.get("/driver-standings", async (req, res) => {
   //TODO: Remove and replace with real current round
   const round = 2;
   const driverStandings = await getCurrentDriverStandings(round);
+  res.header("Access-Control-Allow-Origin", "*");
   res.json(driverStandings);
 });
 
