@@ -1,7 +1,6 @@
-import { Container } from "@material-ui/core";
 import { makeStyles } from "@material-ui/styles";
-import React, { useEffect, useMemo, useState } from "react";
-import { getDriverStandings } from "../../hooks/driver";
+import React, { useMemo, useState } from "react";
+import { getDriverStandings } from "../../hooks";
 import { DriverListItem } from "./DriverListItem/DriverListItem";
 
 interface Driver {

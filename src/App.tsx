@@ -1,6 +1,7 @@
 import { DndProvider } from "react-dnd";
 import { HTML5Backend } from "react-dnd-html5-backend";
 import { Routes, Route, Link, BrowserRouter } from "react-router-dom";
+import { CompetitorStandings } from "./components/competitorStandings/CompetitorStandings";
 import { DriverStandings } from "./components/driverStandings/DriverStandings";
 
 export const App = () => {
@@ -10,7 +11,10 @@ export const App = () => {
         <Routes>
           <Route path="/" element={<></>} />
           <Route path="/standings" element={<DriverStandings />} />
-          <Route path="/competition-standings" element={<></>} />
+          <Route
+            path="/competition-standings"
+            element={<CompetitorStandings />}
+          />
         </Routes>
       </BrowserRouter>
     </div>
