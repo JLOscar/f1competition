@@ -3,7 +3,7 @@ import { json } from "body-parser";
 import { apiBaseUrl } from "..";
 
 export const getCurrentDriverStandings = async (round: number) => {
-  const year = new Date().getFullYear() - 1;
+  const year = new Date().getFullYear();
   //TODO: Add real current round
   const url = `${apiBaseUrl}/${year}/${round}/driverStandings.json`;
 
