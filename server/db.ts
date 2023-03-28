@@ -1,11 +1,11 @@
 import { Client } from "pg";
 //TODO: Hide this in .env
 const client = new Client({
-  host: "ec2-34-255-225-151.eu-west-1.compute.amazonaws.com",
-  database: "de33jp38qo5lof",
-  user: "cwkdfusxsqrits",
-  password: "86e25767023224fedff963365b729597fd5f4d97088f6609743e5ee97c269464",
-  port: 5432,
+  host: "",
+  database: "",
+  user: "",
+  password: "",
+  port: 1234,
   ssl: { rejectUnauthorized: false },
 });
 
